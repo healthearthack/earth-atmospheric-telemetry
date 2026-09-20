@@ -1,0 +1,52 @@
+name: Ingest Atmospheric Telemetry & Dispatch
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'ingest_telemetry.py'
+
+jobs:
+  ingest-and-dispatch:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install Dependencies
+        run: |
+          pip install requests
+
+      - name: Execute Telemetry Extraction
+        run: |
+          python ingest_telemetry.py
+
+      - name: Commit Updated Telemetry Artifact
+        run: |
+          git config user.name "healthearthack-ci"
+          git config user.email "ci@thepolka.cloud"
+          git add data/atmospheric_surface_latest.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore(telemetry): automated macro/meso atmospheric sync [skip ci]" && git push)
+
+      - name: Dispatch Event to Subsurface Core (Repo 2)
+        if: env.CROSS_REPO_PAT != ''
+        uses: peter-evans/repository-dispatch@v3
+        env:
+          CROSS_REPO_PAT: ${{ secrets.CROSS_REPO_PAT }}
+        with:
+          token: ${{ secrets.CROSS_REPO_PAT }}
+          repository: healthearthack/smackover-oil-lithium-energy
+          event-type: atmospheric_telemetry_ready
+          client-payload: '{"source": "earth-atmospheric-telemetry", "status": "SYNCED"}'

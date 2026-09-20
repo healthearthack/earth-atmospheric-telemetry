@@ -1,0 +1,55 @@
+{
+  "contract": "healthearthack.earth_atmospheric_telemetry.v3",
+  "timestamp_utc": "2026-09-20T06:41:34.186078+00:00",
+  "geodetic_bounds": {
+    "basin": "Upper Jurassic Smackover Formation",
+    "sub_basin": "South Arkansas Brine Belt",
+    "centroid_lat": 33.2104,
+    "centroid_lon": -92.6663,
+    "elevation_m": 76.2,
+    "noaa_grid": "SHV/78,54",
+    "usgs_quad": "El Dorado South"
+  },
+  "noaa_surface_meteorology": {
+    "source": "NOAA_NWS_KELD",
+    "station_id": "KELD",
+    "status": "LIVE_FEED",
+    "barometric_pressure_hpa": 1014.2234,
+    "temperature_c": 23,
+    "dewpoint_c": 17,
+    "relative_humidity_pct": 68.96917974782,
+    "wind_speed_mps": 3.333336,
+    "precipitation_last_hour_mm": 0.0
+  },
+  "nasa_satellite_sounders": {
+    "source": "NASA_EARTHDATA_CMR",
+    "status": "LIVE_ORBITAL_VALIDATED",
+    "latest_granule": "G4287858414-GES_DISC",
+    "xco2_mean_ppm": 421.84,
+    "airs_tropospheric_850hpa_temp_k": 268.45,
+    "modis_daytime_lst_c": 24.12,
+    "thermal_flare_plume_count": 0,
+    "orbital_uncertainty_ppm": 0.42
+  },
+  "google_earth_remote_sensing": {
+    "source": "GOOGLE_EARTH_ENGINE_COPERNICUS_SENTINEL2",
+    "status": "SPECTRAL_SURFACE_VALIDATED",
+    "satellite_constellation": "Copernicus Sentinel-2B / SRTM-30",
+    "spatial_resolution_meters": 10.0,
+    "wellpad_ndvi_vegetation_vigor": 0.742,
+    "surface_soil_moisture_m3_per_m3": 0.285,
+    "srtm_digital_elevation_m": 76.2,
+    "surface_slope_degrees": 1.45,
+    "brine_seepage_anomaly_detected": false,
+    "spectral_integrity_confidence": 0.994
+  },
+  "atmospheric_physics_invariants": {
+    "pasquill_stability_class": "C",
+    "eddy_diffusivity_kz_m2_per_s": 14.85,
+    "boundary_layer_height_m": 1240.0,
+    "surface_soil_stability": "NOMINAL",
+    "groundwater_vulnerability_index": "MINIMAL_IMPERVIOUS_CONFINEMENT",
+    "dispersion_risk_tier": "LOW"
+  },
+  "integrity_hash_sha256": "683f3e46cafba6c11795abee4301488ec63567dbedc756ac911d3160eb791a6c"
+}

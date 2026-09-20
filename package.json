@@ -1,0 +1,14 @@
+{
+  "name": "earth-atmospheric-telemetry",
+  "version": "2.4.0",
+  "description": "TypeScript contracts and client for NOAA/NASA Atmospheric Telemetry",
+  "main": "dist/types.js",
+  "types": "dist/types.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  },
+  "license": "MIT"
+}

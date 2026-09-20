@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "earth-atmospheric-telemetry"
+version = "2.4.0"
+description = "Multi-Scale Macro/Meso Atmospheric & Remote Sensing Telemetry Engine (NOAA & NASA Earthdata)"
+readme = "README.md"
+authors = [{ name = "Doctoral Candidate healthearthack", email = "admin@thepolka.cloud" }]
+license = { text = "MIT" }
+dependencies = [
+    "requests>=2.31.0",
+    "numpy>=1.24.0",
+    "pandas>=2.0.0",
+    "pyarrow>=14.0.0"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "jupyterlab>=4.0.0"
+]
