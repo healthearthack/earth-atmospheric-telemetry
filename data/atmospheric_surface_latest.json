@@ -1,6 +1,6 @@
 {
   "contract": "healthearthack.earth_atmospheric_telemetry.v3",
-  "timestamp_utc": "2026-10-17T14:44:34.177584+00:00",
+  "timestamp_utc": "2026-10-17T19:55:06.225905+00:00",
   "geodetic_bounds": {
     "basin": "Upper Jurassic Smackover Formation",
     "sub_basin": "South Arkansas Brine Belt",
@@ -11,14 +11,14 @@
     "usgs_quad": "El Dorado South"
   },
   "noaa_surface_meteorology": {
-    "source": "NOAA_NWS_KELD",
+    "source": "NOAA_NWS_CALIBRATED_FALLBACK",
     "station_id": "KELD",
-    "status": "LIVE_FEED",
-    "barometric_pressure_hpa": 1032.8485,
-    "temperature_c": 12,
-    "dewpoint_c": 5,
-    "relative_humidity_pct": 62.250959103783,
-    "wind_speed_mps": 6.170004936000001,
+    "status": "CALIBRATED_BASELINE",
+    "barometric_pressure_hpa": 1014.2,
+    "temperature_c": 22.4,
+    "dewpoint_c": 16.2,
+    "relative_humidity_pct": 68.5,
+    "wind_speed_mps": 3.61,
     "precipitation_last_hour_mm": 0.0
   },
   "nasa_satellite_sounders": {
@@ -51,5 +51,5 @@
     "groundwater_vulnerability_index": "MINIMAL_IMPERVIOUS_CONFINEMENT",
     "dispersion_risk_tier": "LOW"
   },
-  "integrity_hash_sha256": "d2a485d0697bc3d8d31a5b793bb2ba92601c8eca98b95f1565eb41664e7b08b5"
+  "integrity_hash_sha256": "577ecc9f87bc2fe348696daccbff2049a19118fdde8e58513e4ac91a85678cea"
 }
