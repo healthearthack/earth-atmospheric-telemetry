@@ -1,6 +1,6 @@
 {
   "contract": "healthearthack.earth_atmospheric_telemetry.v3",
-  "timestamp_utc": "2026-10-22T16:22:54.244121+00:00",
+  "timestamp_utc": "2026-10-22T21:02:35.442517+00:00",
   "geodetic_bounds": {
     "basin": "Upper Jurassic Smackover Formation",
     "sub_basin": "South Arkansas Brine Belt",
@@ -51,5 +51,5 @@
     "groundwater_vulnerability_index": "MINIMAL_IMPERVIOUS_CONFINEMENT",
     "dispersion_risk_tier": "LOW"
   },
-  "integrity_hash_sha256": "0e2c5b699a431e14b03c8a772839e001ce7f0fdd9f22e53f3a1a53e9d6e07e19"
+  "integrity_hash_sha256": "319085432b12530ef1d5c1ff6529a6a87f930eea8b77adbf9dd239fa55fe7942"
 }
