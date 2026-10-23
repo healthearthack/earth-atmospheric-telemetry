@@ -1,6 +1,6 @@
 {
   "contract": "healthearthack.earth_atmospheric_telemetry.v3",
-  "timestamp_utc": "2026-10-23T02:46:38.122091+00:00",
+  "timestamp_utc": "2026-10-23T10:47:39.032590+00:00",
   "geodetic_bounds": {
     "basin": "Upper Jurassic Smackover Formation",
     "sub_basin": "South Arkansas Brine Belt",
@@ -14,10 +14,10 @@
     "source": "NOAA_NWS_KELD",
     "station_id": "KELD",
     "status": "LIVE_FEED",
-    "barometric_pressure_hpa": 1021.3348,
-    "temperature_c": 14,
+    "barometric_pressure_hpa": 1022.0121,
+    "temperature_c": 8,
     "dewpoint_c": 4,
-    "relative_humidity_pct": 50.936601507911,
+    "relative_humidity_pct": 75.859700794654,
     "wind_speed_mps": 3.333336,
     "precipitation_last_hour_mm": 0.0
   },
@@ -51,5 +51,5 @@
     "groundwater_vulnerability_index": "MINIMAL_IMPERVIOUS_CONFINEMENT",
     "dispersion_risk_tier": "LOW"
   },
-  "integrity_hash_sha256": "de0c1250efea9ecc60d21c62c8204dfd226563ee22944d4486d180d266693d65"
+  "integrity_hash_sha256": "bf030d210ab0cfc3d805cca1feaa6296abe82799bf022d89d0e9b8af4fb965b6"
 }
