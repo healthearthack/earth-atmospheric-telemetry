@@ -1,6 +1,6 @@
 {
   "contract": "healthearthack.earth_atmospheric_telemetry.v3",
-  "timestamp_utc": "2026-10-24T20:01:26.819162+00:00",
+  "timestamp_utc": "2026-10-25T02:34:14.107976+00:00",
   "geodetic_bounds": {
     "basin": "Upper Jurassic Smackover Formation",
     "sub_basin": "South Arkansas Brine Belt",
@@ -14,11 +14,11 @@
     "source": "NOAA_NWS_KELD",
     "station_id": "KELD",
     "status": "LIVE_FEED",
-    "barometric_pressure_hpa": 1023.028,
-    "temperature_c": 29,
-    "dewpoint_c": 5,
-    "relative_humidity_pct": 21.793154294904,
-    "wind_speed_mps": 3.333336,
+    "barometric_pressure_hpa": 1024.7212,
+    "temperature_c": 18,
+    "dewpoint_c": 7,
+    "relative_humidity_pct": 48.582347990729,
+    "wind_speed_mps": 1.540001232,
     "precipitation_last_hour_mm": 0.0
   },
   "nasa_satellite_sounders": {
@@ -44,12 +44,12 @@
     "spectral_integrity_confidence": 0.994
   },
   "atmospheric_physics_invariants": {
-    "pasquill_stability_class": "C",
-    "eddy_diffusivity_kz_m2_per_s": 14.85,
+    "pasquill_stability_class": "B",
+    "eddy_diffusivity_kz_m2_per_s": 22.1,
     "boundary_layer_height_m": 1240.0,
     "surface_soil_stability": "NOMINAL",
     "groundwater_vulnerability_index": "MINIMAL_IMPERVIOUS_CONFINEMENT",
     "dispersion_risk_tier": "LOW"
   },
-  "integrity_hash_sha256": "29c153c21e04053a10d67c267e8ad3aebf42023c800fb04c61b27e816bae9fe8"
+  "integrity_hash_sha256": "b02c34f8e19b1a52509efe718de96bfc9e1e1419fa173b6bdaf09416b75d55f3"
 }
