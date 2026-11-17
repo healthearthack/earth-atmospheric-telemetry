@@ -1,6 +1,6 @@
 {
   "contract": "healthearthack.earth_atmospheric_telemetry.v3",
-  "timestamp_utc": "2026-11-17T01:22:24.374071+00:00",
+  "timestamp_utc": "2026-11-17T15:17:03.477882+00:00",
   "geodetic_bounds": {
     "basin": "Upper Jurassic Smackover Formation",
     "sub_basin": "South Arkansas Brine Belt",
@@ -14,17 +14,17 @@
     "source": "NOAA_NWS_KELD",
     "station_id": "KELD",
     "status": "LIVE_FEED",
-    "barometric_pressure_hpa": 1029.4621,
-    "temperature_c": 8,
-    "dewpoint_c": 1,
-    "relative_humidity_pct": 61.296851102691,
-    "wind_speed_mps": 2.060001648,
+    "barometric_pressure_hpa": 1030.8167,
+    "temperature_c": 4,
+    "dewpoint_c": 2,
+    "relative_humidity_pct": 86.803362953546,
+    "wind_speed_mps": 3.333336,
     "precipitation_last_hour_mm": 0.0
   },
   "nasa_satellite_sounders": {
-    "source": "NASA_GODDARD_CALIBRATED_FALLBACK",
-    "status": "CALIBRATED_ORBITAL_MODEL",
-    "latest_granule": "OCO2_L2_LITE_FP_2026_SMACKOVER",
+    "source": "NASA_EARTHDATA_CMR",
+    "status": "LIVE_ORBITAL_VALIDATED",
+    "latest_granule": "G4401508844-GES_DISC",
     "xco2_mean_ppm": 421.84,
     "airs_tropospheric_850hpa_temp_k": 268.45,
     "modis_daytime_lst_c": 24.12,
@@ -44,12 +44,12 @@
     "spectral_integrity_confidence": 0.994
   },
   "atmospheric_physics_invariants": {
-    "pasquill_stability_class": "B",
-    "eddy_diffusivity_kz_m2_per_s": 22.1,
+    "pasquill_stability_class": "C",
+    "eddy_diffusivity_kz_m2_per_s": 14.85,
     "boundary_layer_height_m": 1240.0,
     "surface_soil_stability": "NOMINAL",
     "groundwater_vulnerability_index": "MINIMAL_IMPERVIOUS_CONFINEMENT",
     "dispersion_risk_tier": "LOW"
   },
-  "integrity_hash_sha256": "fef867e45565b23c72dfb574ab5fc2f661ef5aefcb451c4f328ea8cc22243688"
+  "integrity_hash_sha256": "dee1b443bbf934207c851aee3b8c6cc2c4bfd295a31e524236e3f58dc3ccd593"
 }
